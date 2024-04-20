@@ -1,0 +1,121 @@
+.table-outer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.row-title {
+  margin-top: 3 rem;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  max-height: 500px;
+  overflow: scroll; /* Scrollbar are always visible */
+  overflow: auto;
+  display: block;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+
+th {
+  text-align: center;
+  position: sticky; 
+  top: 0; 
+  border-bottom: solid;
+}
+th:hover {
+  color: var(--primary);
+  font-size: 103%;
+  border-color: var(--secondary);
+}
+th,
+td {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f289;
+}
+
+tr:hover {
+  background-color: rgb(186, 225, 255);
+}
+th {
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+.table-header {
+  text-align: center;
+  position: sticky;
+}
+
+.table-outer {
+  display: "flex";
+  justify-content: "center";
+  margin-top: "1rem";
+}
+
+ h1 {
+  font-size: 3rem;
+  color: var(--secondary);
+  text-shadow: 1px 1px 3px var(--bg);
+  line-height: 1.2;
+}
+ h1 span {
+  color: var(--primary);
+  font-family: cursive;
+}
+
+.btn-done, .btn-edit {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 25px;
+    margin: 5px auto;
+    padding: inherit;
+}
+.btn-cancel, .btn-delete {
+  background-color: red;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 25px;
+    margin: auto;
+    padding: inherit;
+}
+
+.btn-edit:hover, .btn-done:hover {
+    color: var(--primary);
+  box-shadow: 1px -2px 1px var(--primary), -3px -2px 1px var(--primary),
+    2px 1px 1px var(--primary), -3px 1px 1px var(--primary);
+  background: var(--secondary);
+
+}
+.btn-cancel:hover, .btn-delete:hover {
+    color: red;
+  box-shadow: 1px -2px 1px red, -3px -2px 1px red,
+    2px 1px 1px red, -3px 1px 1px red;
+  background: var(--bg);
+}
+
+input[type=text]   {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  } 

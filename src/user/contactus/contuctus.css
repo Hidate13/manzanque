@@ -1,0 +1,61 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+h2 {
+  font-size: 3rem;
+    color: var(--secondary);
+    text-shadow: 1px 1px 3px var(--bg);
+    line-height: 1.2;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactus-container {
+  display: flex;
+  border-radius: 5px;
+  background-color: #2098f38c;
+  padding: 20px ;
+  margin : 0 10rem;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .app-body {
+      height: auto;
+    }
+    .contactus-container {
+        display: grid;
+      }
+      .contactus-containe-left{
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+    }
+
+  }
+
+.contactus-containe-left{
+    padding:45px 20px 0 20px ;
+}
